@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./depositphotos_523648932-stock-photo-concrete-rooftop-night-city-view.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.clock{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px solid black;
+    height: 200px;
+    width: 400px;
+}
+.clock div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    gap: 20px;
+    font-size: 60px;
+
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: rgba(255, 253, 253, 0.402) 0px 30px 60px -12px, rgba(255, 255, 255, 0.441) 0px 18px 36px -18px;
+}
+
+span{
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+@media screen and (max-width:420px) {
+  .clock{
+    width: 80%;
+  }
+
+  /* .clock div{
+    width: 40%;
+    height: 40%;
+    gap: 10px;
+    font-size: 40px;
+  } */
+}
+
+@media screen and (max-width:280px) {
+  .clock{
+    width: 90%;
+  }
+  .clock div{
+    width: 40%;
+    height: 40%;
+    gap: 10px;
+    font-size: 40px;
+  }
+
+}
+
